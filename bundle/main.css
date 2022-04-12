@@ -1,0 +1,126 @@
+@import url(http://fonts.cdnfonts.com/css/pokemon-solid);
+.mainUI {
+    margin: auto;
+    height: 175px;
+    width: 500px;
+    font-family: 'Pokemon Solid', sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+    text-align: center;
+    color: yellow;
+}
+
+#newgameBtn {
+    height: 50px;
+    -webkit-text-stroke-width: 0px;
+    background-color: yellow;
+    color: blue;
+    font-weight: bold;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+#newgameBtn:hover {
+    background: blueviolet;
+}
+
+.grid-cartas {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 12%;
+}
+
+.victoryVisible {
+    visibility: visible;
+}
+
+.victoryInvisible {
+    visibility: hidden;
+}
+
+.carta {
+    position: relative;
+}
+
+.carta img {
+    border-radius: 5px;
+    margin-top: 3%;
+}
+
+
+.backside {
+    height: 45%;
+    width: 45%;
+}
+
+.frontside {
+    border: 5px solid rgb(0, 0, 122);
+    height: 22.5%;
+    width: 22.5%;
+}
+
+.carta .frontside {
+    position: absolute;
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+    height: 89%;
+    width: 42%;
+}
+
+.flip .frontside {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+.carta .backside {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.flip .backside {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
+
+.flipreset .backside {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
+.screen {
+    position: absolute;
+    z-index: 5;
+    height: 50%;
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 20%;
+}
+
+.victoryroyale {
+    height: 80%;
+    width: 80%;
+}
+
+.ludicolodancing {
+    height: 80%;
+    width: 80%;
+}
+body{
+    /*background-color: #63d471;
+    background-image: linear-gradient(90deg, #63d471 0%, #233329 74%);
+    color: white;*/
+
+    background-color: green;
+}
+
+#background {
+    position: absolute;
+    width: 99%;
+    height: 170%;
+    z-index: -1;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+
