@@ -1,0 +1,48 @@
+.carta {
+    position: relative;
+}
+
+.carta img {
+    border-radius: 5px;
+    margin-top: 3%;
+}
+
+
+.backside {
+    height: 45%;
+    width: 45%;
+}
+
+.frontside {
+    border: 5px solid rgb(0, 0, 122);
+    height: 22.5%;
+    width: 22.5%;
+}
+
+.carta .frontside {
+    position: absolute;
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+    height: 89%;
+    width: 42%;
+}
+
+.flip .frontside {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+.carta .backside {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.flip .backside {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
+
+.flipreset .backside {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
